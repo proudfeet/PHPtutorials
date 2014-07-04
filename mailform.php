@@ -19,6 +19,6 @@
 
 <p><?php echo $message ?></p>
 
-<p>But you already knew that because your message has been sent to <?php echo $sendto ?></p>
+<p>But you already knew that because your message has been sent to <?php echo $sendto ?>.</p>
 
 
