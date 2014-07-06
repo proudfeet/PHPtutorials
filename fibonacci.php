@@ -1,21 +1,27 @@
 <?php 
 
+$term = intval($_POST['fibterm']);
 
-
-
-function fibonacci($n, $first = 0, $second = 1)
+function fibonacci($term, $first = 0, $second = 1)
 // Must declare this as a function, as it will not run properly otherwise
 
 {
-  $start = [$first, $second];
-  for($i=1;$i<$n;$i++)
+  $sequence = [$first,$second];
+  for($i=1;$i<$term;$i++)
   {
-    $fib[] = $fib[$i]+$fib[$i-1];
+    $sequence[] = $sequence[$i]+$sequence[$i-1];
   }
-  return $fib;
+  return $sequence;
 }
+
+
+
 echo "<pre>";
-print_r(fibonacci(50));
-// echo "</pre>";
+echo "Sequence";
+print_r($sequence);
+echo "Function";
+print_r(fibonacci($term));
+echo "</pre>";
+
 
 ?>
