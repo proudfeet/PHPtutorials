@@ -17,8 +17,6 @@ function fibonacci($term, $first = 0, $second = 1)
 
 
 echo "<pre>";
-echo "Sequence";
-print_r($sequence);
 echo "Function";
 print_r(fibonacci($term));
 echo "</pre>";
